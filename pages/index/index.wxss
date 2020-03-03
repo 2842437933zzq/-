@@ -1,0 +1,259 @@
+/* pages/index/index.wxss */
+page{
+  padding-top: 70rpx;
+  /* 背景固定 */
+  /* background-attachment: fixed; */
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -9;
+  background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582640826641&di=ee9379fcc548a156e307b5e05ef677de&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D1374294031%2C1731542787%26fm%3D214%26gp%3D0.jpg) no-repeat center center/cover;
+}
+.title{
+  color: white;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+.navbar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.ipt{
+  width: 80%;
+  height: 50rpx;
+  padding: 5rpx 72rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #efefef;
+  color: white;
+}
+.place{
+  font-size: 28rpx;
+  color: #efefef;
+}
+.img{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 85rpx;
+  top: 0;
+}
+
+.locat_box{
+  height: 180rpx;
+  margin: 20rpx 0;
+}
+.locat_box>.user{
+  display: flex;
+  align-items: center;
+}
+.user>view{
+  margin-left: 20rpx;
+}
+.locat_box .icon{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.locat_box .name{
+  color: white;
+  font-size: 28rpx;
+  
+}
+
+.city{
+  margin: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.city>.left{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  font-size: 50rpx;
+}
+.city>.right{
+  line-height: 100rpx;
+  font-size: 28rpx;
+}
+.locat{
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 20rpx;
+}
+
+.weather{
+  height: 640rpx;
+  /* background-color: orange; */
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+}
+.tem{
+  height: 600rpx;
+  line-height: 600rpx;
+  font-size: 150rpx;
+  position: relative;
+}
+.tem>text{
+font-size: 50rpx;
+position: absolute;
+top: -30rpx;
+bottom: 0;
+right: -50rpx;
+margin: auto;
+}
+
+.weather>view:first-child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.allweather{
+  background-color:rgba(0,0,0,0.2);
+  margin-top: 40rpx; 
+}
+.allweather>.text{
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid #efefef;
+  padding: 6rpx 0;
+}
+scroll-view{
+  white-space: nowrap;
+}
+scroll-view .item{
+  width: 28%;
+  display: inline-block;
+  color: white;
+  font-size: 26rpx;
+  text-align: center;
+}
+scroll-view .item>view{
+  padding: 6rpx 0;
+}
+
+/* 7天预报 */
+.wea_detail{
+  height: 260rpx;
+  margin-top: 40rpx;
+  background-color:rgba(0,0,0,0.2);
+  border-right: 1rpx solid #efefef;
+  border-top: 1rpx solid #efefef;
+  box-sizing: border-box;
+
+}
+.wea_detail>.item{
+  width: 25%;
+  height: 50%;
+  color: white;
+  border-left: 1rpx solid #efefef;
+  border-bottom: 1rpx solid #efefef;
+  box-sizing: border-box;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.wea_detail>.item>text:last-child{
+ font-size: 28rpx; 
+}
+.hours{
+  margin-top: 40rpx;
+  background-color:rgba(0,0,0,0.2);
+}
+.hours>.text{
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid #efefef;
+  padding: 6rpx 0; 
+}
+swiper-item{
+  padding-top: 20rpx;
+}
+swiper-item .container{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  color: white;
+  border: 1px solid #efefef;
+  background-color: rgba(0,0,0,0.2);
+  border-radius:30rpx;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+swiper-item .container>text:last-child{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40rpx;
+  text-align: center;
+}
+/* 逐3小时预报 */
+/* 生活指数 */
+.life{
+  background-color:rgba(0,0,0,0.2);
+  margin-top: 40rpx; 
+}
+.life>.text{
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid #efefef;
+  padding: 6rpx 0;
+}
+.life>.box{
+  margin: 0 20rpx;
+}
+
+.box>.item{
+  height: 180rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+}
+.box>.item:last-child{
+  border: none;
+}
+
+.box image{
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.box .life_detail{
+  height: 100%;
+  width: 75%;
+  /* background-color: blueviolet; */
+}
+
+.life_detail{
+  padding-left: 20rpx;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.life_detail>text:first-child{
+  font-size: 40rpx;
+}
+
+
+.logo{
+  padding: 16rpx 0  4rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: white;
+}
+
+
